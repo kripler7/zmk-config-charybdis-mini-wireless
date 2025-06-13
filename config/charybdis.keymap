@@ -83,8 +83,34 @@
         };
 
         print {
-            bindings = <&trans>;
+            bindings = <&screenshot>;
             key-positions = <25 26 27>;
+        };
+
+        num_layer {
+            bindings = <&to 3>;
+            key-positions = <6 7 8>;
+        };
+
+        bt_layer {
+            bindings = <&to 4>;
+            key-positions = <5 4 3>;
+        };
+
+        default {
+            bindings = <&to 0>;
+            key-positions = <18 19 20 21>;
+        };
+
+        qwerty {
+            bindings = <&to 1>;
+            key-positions = <34 22>;
+        };
+
+        tilde {
+            bindings = <&mt LS(GRAVE) GRAVE>;
+            key-positions = <1 2>;
+            layers = <2>;
         };
     };
 
@@ -115,6 +141,22 @@
             #binding-cells = <2>;
             hold-trigger-key-positions = <40>;
             tapping-term-ms = <100>;
+        };
+    };
+
+    macros {
+        screenshot: screenshot {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LS(LEFT_GUI)>,
+                <&macro_tap>,
+                <&kp S>,
+                <&macro_release>,
+                <&kp LS(LEFT_GUI)>;
+
+            label = "SCREENSHOT";
         };
     };
 
