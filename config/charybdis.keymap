@@ -117,6 +117,12 @@
             bindings = <&mo 5>;
             key-positions = <29 28>;
         };
+
+        mute {
+            bindings = <&kp K_MUTE>;
+            key-positions = <40 39>;
+            layers = <2>;
+        };
     };
 
     behaviors {
@@ -191,7 +197,7 @@
 &none  &mt EXCLAMATION NUMBER_1     &mt AT_SIGN NUMBER_2           &mt HASH NUMBER_3  &mt DLLR NUMBER_4  &mt PRCNT N5    &mt CARET NUMBER_6  &mt AMPS NUMBER_7  &mt ASTRK NUMBER_8  &mt LPAR NUMBER_9  &mt RPAR NUMBER_0        &none
 &none  &mt UNDER MINUS              &mt PLUS EQUAL                 &none              &none              &none           &none               &kp PG_UP          &kp UP_ARROW        &kp PAGE_DOWN      &u_mt DOUBLE_QUOTES SQT  &none
 &none  &mt LEFT_BRACE LEFT_BRACKET  &mt RIGHT_BRACE RIGHT_BRACKET  &none              &none              &none           &kp HOME            &kp LEFT_ARROW     &kp DOWN            &kp RIGHT          &kp END                  &none
-                                                                   &none              &none              &none           &none               &none
+                                                                   &none              &none              &none           &kp C_VOLUME_DOWN   &kp C_VOLUME_UP
             >;
         };
 
