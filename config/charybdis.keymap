@@ -118,7 +118,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        BASE {
+        colemak_dh {
             bindings = <
 &none  &kp Q             &kp W               &kp F            &kp P             &kp B          &kp J        &kp L              &kp U          &kp Y                &u_mt COLON SEMI      &none
 &none  &kp A             &u_mt LEFT_SHIFT R  &u_mt LCTRL S    &u_mt LEFT_ALT T  &kp G          &kp M        &u_mt RIGHT_ALT N  &u_mt RCTRL E  &u_mt RIGHT_SHIFT I  &kp O                 &none
@@ -136,12 +136,12 @@
             >;
         };
 
-        SYMNUM {
+        arrow_numbers {
             bindings = <
-&bt BT_CLR      &kp EXCL      &kp AT       &kp HASH    &kp DLLR  &kp PRCNT    &kp CARET  &kp AMPS                 &kp KP_MULTIPLY   &kp LPAR              &kp RPAR              &kp DEL
-&studio_unlock  &trans        &bt BT_PRV   &bt BT_NXT  &trans    &trans       &kp UNDER  &u_mt RIGHT_SHIFT EQUAL  &u_mt RCTRL LBKT  &u_mt RIGHT_ALT RBKT  &u_mt RIGHT_GUI BSLH  &kp GRAVE
-&trans          &out OUT_TOG  &bootloader  &trans      &trans    &trans       &kp MINUS  &kp PLUS                 &kp LBRC          &kp RBRC              &kp PIPE              &kp TILDE
-                                           &trans      &trans    &mo 3        &trans     &trans
+&none  &mt EXCLAMATION NUMBER_1     &mt AT_SIGN NUMBER_2           &mt HASH NUMBER_3  &mt DLLR NUMBER_4  &mt PRCNT N5    &mt CARET NUMBER_6  &mt AMPS NUMBER_7  &mt ASTRK NUMBER_8  &mt LPAR NUMBER_9  &mt RPAR NUMBER_0        &none
+&none  &mt UNDER MINUS              &mt PLUS EQUAL                 &none              &none              &none           &none               &kp PG_UP          &kp UP_ARROW        &kp PAGE_DOWN      &u_mt DOUBLE_QUOTES SQT  &none
+&none  &mt LEFT_BRACE LEFT_BRACKET  &mt RIGHT_BRACE RIGHT_BRACKET  &none              &none              &none           &kp HOME            &kp LEFT_ARROW     &kp DOWN            &kp RIGHT          &kp END                  &none
+                                                                   &none              &none              &none           &none               &none
             >;
         };
 
