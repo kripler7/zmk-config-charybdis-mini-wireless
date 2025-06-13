@@ -14,7 +14,9 @@
         compatible = "zmk,input-listener";
         device = <&trackball>;
         input-processors = <&zip_xy_scaler 1 2>, <&zip_temp_layer 4 400>;
- // Switch to auto-mouse temp layer, decrease sensitivity
+
+        // Switch to auto-mouse temp layer, decrease sensitivity
+
         scroll {
             layers = <5>; // SCROLL
             input-processors =
@@ -118,10 +120,10 @@
 
         BASE {
             bindings = <
-&none  &kp Q  &kp W               &kp F          &kp P             &kp B    &kp J  &kp L              &kp U          &kp Y                &kp SEMI  &none
-&none  &kp A  &u_mt LEFT_SHIFT R  &u_mt LCTRL S  &u_mt LEFT_ALT T  &kp G    &kp M  &u_mt RIGHT_ALT N  &u_mt RCTRL E  &u_mt RIGHT_SHIFT I  &kp O     &none
-&none  &kp Z  &kp X               &kp C          &kp D             &kp V    &kp K  &kp H              &kp COMMA      &kp DOT              &kp FSLH  &none
-                                  &kp LGUI       &kp SPACE         &mo 1    &mo 2  &kp RET
+&none  &kp Q             &kp W               &kp F            &kp P             &kp B          &kp J        &kp L              &kp U          &kp Y                &kp SEMI              &none
+&none  &kp A             &u_mt LEFT_SHIFT R  &u_mt LCTRL S    &u_mt LEFT_ALT T  &kp G          &kp M        &u_mt RIGHT_ALT N  &u_mt RCTRL E  &u_mt RIGHT_SHIFT I  &kp O                 &none
+&none  &u_mt LEFT_GUI Z  &kp X               &kp C            &kp D             &kp V          &kp K        &kp H              &kp COMMA      &kp DOT              &u_mt QUESTION SLASH  &none
+                                             &mt LC(V) LC(C)  &lt 3 TAB         &lt 1 SPACE    &lt 1 SPACE  &kp BACKSPACE
             >;
         };
 
