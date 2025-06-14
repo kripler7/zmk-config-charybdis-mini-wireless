@@ -13,6 +13,7 @@
         compatible = "zmk,input-listener";
         device = <&trackball>;
         input-processors = <&zip_xy_scaler 1 2>, <&zip_temp_layer 6 400>;
+        require-prior-idle-ms = <2000>;
 
         // Switch to auto-mouse temp layer, decrease sensitivity
 
