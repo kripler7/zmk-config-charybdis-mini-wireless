@@ -138,12 +138,12 @@
 
         Back {
             bindings = <&kp C_AC_BACK>;
-            key-positions = <20 21>;
+            key-positions = <20 11>;
         };
 
         Forward {
             bindings = <&kp C_AC_FORWARD>;
-            key-positions = <24 23>;
+            key-positions = <20 21>;
         };
     };
 
