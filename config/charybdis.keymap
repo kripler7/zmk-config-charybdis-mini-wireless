@@ -75,7 +75,7 @@
         };
 
         print {
-            bindings = <&screenshot>;
+            bindings = <&kp PRINTSCREEN>;
             key-positions = <20 21 22>;
         };
 
@@ -209,7 +209,7 @@
             bindings = <
   &kp Q             &kp W               &kp E                 &kp R             &kp T          &kp Y        &kp U              &kp I                  &kp O                &kp P
   &kp A             &u_mt LEFT_SHIFT S  &u_mt LEFT_CONTROL D  &u_mt LEFT_ALT F  &kp G          &kp H        &u_mt RIGHT_ALT J  &u_mt RIGHT_CONTROL K  &u_mt RIGHT_SHIFT L  &mt COLON SEMI
-  &u_mt LEFT_GUI Z  &kp X               &kp C                 &kp V             &kp B          &kp N        &kp M              &kp COMMA              &kp DOT              &kp FSLH
+  &u_mt LEFT_GUI Z  &kp X               &kp C                 &kp V             &kp B          &kp N        &kp M              &kp COMMA              &kp DOT              &u_mt QUESTION SLASH
                                         &mt LC(V) LC(C)       &lt 4 TAB         &lt 1 SPACE    &lt 2 SPACE  &kp BACKSPACE
             >;
         };
