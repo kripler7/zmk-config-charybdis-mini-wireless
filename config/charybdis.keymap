@@ -207,7 +207,7 @@
   &kp Q             &kp W               &kp F          &kp P             &kp B          &kp J        &kp L              &kp U          &kp Y                &u_mt COLON SEMI
   &kp A             &u_mt LEFT_SHIFT R  &u_mt LCTRL S  &u_mt LEFT_ALT T  &kp G          &kp M        &u_mt RIGHT_ALT N  &u_mt RCTRL E  &u_mt RIGHT_SHIFT I  &kp O
   &u_mt LEFT_GUI Z  &kp X               &kp C          &kp D             &kp V          &kp K        &kp H              &kp COMMA      &kp DOT              &u_mt QUESTION SLASH
-                                        &lt 6 LG(TAB)  &lt 2 TAB         &lt 1 SPACE    &lt 1 SPACE  &kp BACKSPACE
+                                        &lt 0 LG(TAB)  &lt 2 TAB         &lt 1 SPACE    &lt 1 SPACE  &kp BACKSPACE
             >;
         };
 
@@ -253,15 +253,6 @@
   &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans
   &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans
                   &mkp LCLK  &trans  &mkp RCLK    &trans  &trans
-            >;
-        };
-
-        functions {
-            bindings = <
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-                  &trans  &trans  &trans    &trans  &trans
             >;
         };
     };
