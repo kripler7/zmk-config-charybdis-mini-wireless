@@ -247,7 +247,7 @@
             >;
         };
 
-        AUTO-MOUSE {
+        SNIPE {
             bindings = <
   &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans
   &trans  &trans  &trans     &trans  &trans       &trans  &trans  &trans  &trans  &trans
