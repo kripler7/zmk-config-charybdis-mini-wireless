@@ -10,31 +10,35 @@
 
 / {
     trackball_listener {
-    compatible = "zmk,input-listener";
-    device = <&trackball>;
+        compatible = "zmk,input-listener";
+        device = <&trackball>;
 
-    // Normal pointer movement
-    input-processors = <
-        &zip_xy_scaler 1 2
-    >;
+        // Normal pointer movement
 
-    // Scroll mode (Layer 4)
-    scroll {
-        layers = <4>;
-        input-processors =
-            <&zip_xy_scaler 1 5>,
-            <&zip_xy_to_scroll_mapper>,
-            <&zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT)>;
-    };
-
-    // Sniper mode (Layer 5)
-    snipe {
-        layers = <5>;
         input-processors = <
-            &zip_xy_scaler 1 3    // Precise slow movement
+        &zip_xy_scaler 1 2
         >;
+
+        // Scroll mode (Layer 4)
+
+        scroll {
+            layers = <4>;
+            input-processors =
+                <&zip_xy_scaler 1 5>,
+                <&zip_xy_to_scroll_mapper>,
+                <&zip_scroll_transform (INPUT_TRANSFORM_Y_INVERT)>;
+        };
+
+        // Sniper mode (Layer 5)
+
+        snipe {
+            layers = <5>;
+            input-processors = <
+            &zip_xy_scaler 1 3    // Precise slow movement
+            >;
+        };
     };
-};
+
     combos {
         compatible = "zmk,combos";
 
@@ -160,6 +164,11 @@
             bindings = <&kp LEFT_SHIFT>;
             key-positions = <11 12>;
             layers = <1>;
+        };
+
+        Snipe {
+            bindings = <&mo 5>;
+            key-positions = <24 13>;
         };
     };
 
